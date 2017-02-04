@@ -46,6 +46,17 @@ class Deck:
 
 	def sort(self):
 		self.cards.sort()
+		
+
+class Hand(Deck):
+	"""Represents a hand of playing cards."""
+	def __init__(self, label=''):
+		self.card = []
+		self.label = label
+	
+	def move_cards(self, hand, num):
+		for i in range(num):
+			hand.add_card(self.pop_card())
 
 #card1 = Card(2, 11)
 #card2 = Card(3, 9)
