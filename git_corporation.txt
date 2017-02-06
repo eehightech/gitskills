@@ -17,8 +17,10 @@
 小结
 
 1.查看远程库信息，使用git remote -v；
-1.1 添加新的远程仓库 git remote add [shortname] [url]
-    如:git remote add pb git@github.com:eehightech/gitskills.git
+  1.1 添加新的远程仓库 git remote add [shortname] [url]
+      如:git remote add pb git@github.com:eehightech/gitskills.git
+  1.2 删除远程仓库 git remote rm [name]
+  1.3 重命名远程仓库 git remote rename [oldname] [newname]
 
 2.本地新建的分支如果不推送到远程，对其他人就是不可见的；
 
