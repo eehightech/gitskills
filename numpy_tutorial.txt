@@ -1,3 +1,4 @@
 1. np.array()把序列的序列转换为2维数组，序列的序列的序列转换为三维数组，以此类推。
 2. np.zeros(arg) np.ones(arg) np.empty(arg) 
 3. np.arange(arg1,arg2,arg3) arg1起点/arg2终点不包括/arg3步长
+4. np.linspace(arg1,arg2,arg3)线性等分为arg3个数字
