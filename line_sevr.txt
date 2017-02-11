@@ -1,0 +1,22 @@
+MariaDB [sevr]> CREATE TABLE line (
+    -> line_id CHAR(10) NOT NULL PRIMARY KEY,
+    -> line_name VARCHAR(20) NOT NULL UNIQUE KEY,
+    -> CT float NOT NULL,
+    -> PT float NOT NULL,
+    -> depart_id  CHAR(15) NOT NULL);
+Query OK, 0 rows affected (0.50 sec)
+
+
+MariaDB [sevr]> DESCRIBE line;
++-----------+-------------+------+-----+---------+-------+
+| Field     | Type        | Null | Key | Default | Extra |
++-----------+-------------+------+-----+---------+-------+
+| line_id   | char(10)    | NO   | PRI | NULL    |       |
+| line_name | varchar(20) | NO   | UNI | NULL    |       |
+| CT        | float       | NO   |     | NULL    |       |
+| PT        | float       | NO   |     | NULL    |       |
+| depart_id | char(15)    | NO   |     | NULL    |       |
++-----------+-------------+------+-----+---------+-------+
+5 rows in set (0.11 sec)
+
+MariaDB [sevr]>
