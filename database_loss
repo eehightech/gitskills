@@ -1,0 +1,36 @@
+info_line				线路信息表
+	-id					自增编号				autoincream
+	-name				线路名词
+	-code				线路编码
+	-ct					线路关口流互
+	-pt					线路关口压互
+	-info_station_id	线路所属变电站id号
+
+info_trans				变压器信息表
+	-id					自增编号
+	-name				变压器名称（专变为用户名称）
+	-code				变压器户号
+	-meter_addr		终端逻辑地址
+	-ct					变压器关口计量流互
+	-pt					变压器关口计量压互
+	-info_line_id		变压器所属线路id号
+
+dl_line				线路关口日电量表
+	-id					自增编号
+	-date				电量日期
+	-dl					日电量
+	-info_line_id		线路id编号
+
+dl_trans				变压器日电量表
+	-id					自增编号
+	-date				电量日期
+	-dl					日电量
+	-info_trans_id	变压器id
+
+info_station			变电站信息表
+	-id					自增编号
+	-name				变电站名词
+
+info_depart			管理部门信息表
+	-id					自增编号
+	-name				部门名称
