@@ -1,4 +1,6 @@
 http://www.runoob.com/
+CREATE DATABASE db_name DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
 table name				comment							datatype	attribute
 
 info_line				线路信息表
@@ -41,5 +43,7 @@ ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='变电站信息表'
 
 info_depart			管理部门信息表
 	-id					自增编号						tinyint		not null	AUTO_INCREMENT	primary key
+	-code				部门营销编码					char(10)	not null unique key	
 	-name				部门名称						char(10)	not null	unique key
 ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='管理部门信息表'
+
