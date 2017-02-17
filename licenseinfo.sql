@@ -1,0 +1,11 @@
+CREATE TABLE licenseinfo (
+	id INT(8) NOT NULL UNIQUE PRIMARY KEY AUTO_INCREMENT,
+	sno INT(8) NOT NULL UNIQUE,
+	sname VARCHAR(20) NOT NULL,
+	lno VARCHAR(18) NOT NULL UNIQUE,
+	receive_time DATE,
+	receive_name VARCHAR(20),
+	l_text TEXT,
+	CONSTRAINT license_fk FOREIGN KEY (sno)
+	REFERENCES studentinfo(sno)
+)DEFAULT CHARSET=utf8;
